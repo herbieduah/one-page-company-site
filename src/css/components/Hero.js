@@ -15,7 +15,7 @@ const Hero = () => {
                 <h3>we are</h3>
                 <p>outlier</p>
                 <p>
-                Ten years ago, Outlier was made made of only a few entrepreneurs. Over the next few yeras, we developed,bought and built the companies you see Headers. Now 12,000 strong and driving $1B in revenue but still driven by a small but might team of operating expoerts, we are Outlier. And we are just getting started.
+                Ten years ago, Outlier was made made of only a few entrepreneurs. Over the next few years, we developed,bought and built the companies you see Headers. Now 12,000 strong and driving $1B in revenue but still driven by a small but might team of operating expoerts, we are Outlier. And we are just getting started.
                 </p>
             </div>
             <div>

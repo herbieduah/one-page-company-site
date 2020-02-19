@@ -4,24 +4,28 @@ const Hero = () => {
 	return (
 		<div className="numbers">
            <div className="row">
-                <div className="col-80 numbers_by-the-numbers all-caps">
+                <div className="col-80 numbers__by-the-numbers all-caps">
                     by the <span className="standout">numbers</span>
                 </div>
-                <div className="col-20">
+                <div className="col-20 numbers__text-gray-bg">
                     <p>
                         The good news: every single company we run is profitable. The great news: every company is also growing at an aggressive clip. This combination enables us to fund future acquisitions completely internally. Now <span className="all-caps">that</span>'s insane.
                     </p>
                 </div>   
            </div>
-           <div className="row">
-                <div className="col-80 numbers_by-the-numbers all-caps">
-                    by the <span className="standout">numbers</span>
+           <div className="row all-caps">
+                <div className="col-33 numbers__gross-rev">
+                    <span className="numbers__callout">$1B</span>
+                    <span className="numbers__callout-text">gross revenue</span>
                 </div>
-                <div className="col-20">
-                    <p>
-                        The good news: every single company we run is profitable. The great news: every company is also growing at an aggressive clip. This combination enables us to fund future acquisitions completely internally. Now <span className="all-caps">that</span>'s insane.
-                    </p>
-                </div>   
+                <div className="col-33 numbers__worldwide">
+                    <span className="numbers__callout">$1B</span>
+                    <span className="numbers__callout-text">gross revenue</span>
+                </div>
+                <div className="col-33 numbers__yoy">
+                    <span className="numbers__callout">$1B</span>
+                    <span className="numbers__callout-text">gross revenue</span>
+                </div>  
            </div>
             
             
