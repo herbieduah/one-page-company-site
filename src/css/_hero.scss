@@ -1,0 +1,71 @@
+.hero {
+
+  width:  100%;
+
+  &__slider-content {
+    position: relative;
+  }
+  &__content {
+    position: absolute;
+    background-color: rgba(255, 166, 0, 0.719);
+    bottom: 1%;
+    right: 0;
+    width: 40%;
+    padding: 4rem;
+    color: white;
+    font-size: 1rem;
+  }
+
+  &__content-heading {
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 1px;
+    margin: 0;
+    padding-bottom: 1rem;
+  }
+}
+
+
+@include breakpoint(phone) {
+  .hero {
+    img {
+      display: none;
+    }
+    &__slider-content {
+      width: 100%;
+      min-height: 35vh;
+      display: block;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url(../images/outlier-headquarters.png);
+    }
+    &__content {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      padding: .85rem;
+      background-color: rgba(255, 166, 0, 0.719);
+      font-size: .85rem;
+      box-sizing: border-box;
+    }
+}
+}
+
+@include breakpoint(tablet-portrait) {
+  .hero {
+    &__content {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      padding: 1rem;
+    }
+}
+}
