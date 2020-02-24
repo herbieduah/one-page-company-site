@@ -12,10 +12,12 @@ const Hero = () => {
             </div>
             <div className="timeline">
                 <div className="timeline__line">
-                    <div className="timeline__info timeline__info--finish">
+                    <div className="timeline__info timeline__info--start">
                         <div className="timeline__content">
-                            <h3>Some text that say stuff</h3>
-                            <p>Our people rock. They make up who we are and drive where we're going. </p>
+                            <h3></h3>
+                            <p>entrepreneurial ventures</p>
+                            <span>1 location</span>
+                            <span>2 location</span>
                         </div>
                     </div>
                 </div>

@@ -1,5 +1,13 @@
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat&display=swap');
+
+$main-color: #f58322;
+$main-color-opaque: rgba(#f58522,.80);
+$gray-100: #f7f8fa; 
+$gray-200: #a6acac;
+$gray-300: #787d80;
+$gray-400: #7c7b83;
+$gray-500: #454e57;
 
 
 @mixin breakpoint($breakpoint) {
@@ -26,7 +34,7 @@
 }
 
 body {
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
   width: 100%;
   line-height: 1.5;
 }

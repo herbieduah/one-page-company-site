@@ -24,11 +24,11 @@ const Hero = () => {
                 </div>
                 <div className="col-33 numbers__yoy">
                     <span className="numbers__callout">44%</span>
-                    <span className="numbers__callout-text">year-over-year growth</span>
+                    <span className="numbers__callout-text numbers__callout-text--yoy">year-over-year growth</span>
                 </div>  
            </div>
            <div className="row">
-                <div className="col-33 numbers__text-gray-bg">
+                <div className="col-33 numbers__text-main-bg">
                     <p>
                         We thought you might like to see the folks that make the magic happen each day. While they look normal. We assure you that every one of them is very much an Outlier.
                     </p>

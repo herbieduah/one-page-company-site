@@ -1,6 +1,6 @@
 .history {
   width: 100%;
-  margin-top: -2.1%;
+  margin-top: -2.5%;
   min-height: 60vh;
   background-attachment: fixed;
   background-size: cover;
@@ -53,7 +53,7 @@
 
   &__info {
     position: absolute;
-    width: 300px;
+    width: 230px;
     left: 10%;
     border-left: 1px solid white;
     display: flex;
@@ -82,6 +82,14 @@
       top: 0;
 
       .timeline__content {
+        h3,p,span {
+          font-size: .9rem;
+          display: block;
+        }
+        p{
+          font-weight: bold;
+          text-transform: uppercase;
+        }
         &::before {
           display: none;
         }
@@ -130,7 +138,7 @@
       width: 15px;
       height: 15px;
       border-radius: 50%;
-      background-color: orange;
+      background-color: $main-color;
       left: -8px;
     }
 
@@ -171,8 +179,8 @@
   }
 
   .timeline {
-    background-color: darkslateblue;
-    height: 100vmax;
+    background-color: $gray-500;
+    height: 60vmax;
     display: flex;
     justify-content: center;
     // align-items: center;
@@ -189,7 +197,7 @@
       left: 10%;
       display: flex;
       border: none;
-
+     
       &--finish {
         top: 0;
   
@@ -202,9 +210,22 @@
             content: "";
             display: block;
             transform: rotate(90deg);
-            border-left: solid 15px white;
-            border-bottom: solid 15px transparent;
-            border-top: solid 15px transparent;
+            left: -8px;
+          }
+        }
+      }
+      &--start {
+        top: 0;
+  
+        .timeline__content {
+          &::before {
+            display: none;
+          }
+  
+          &::after {
+            content: "";
+            display: block;
+            transform: rotate(90deg);
             left: -8px;
           }
         }
