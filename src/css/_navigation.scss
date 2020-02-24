@@ -30,7 +30,8 @@
     font-size: 1rem;
     margin-right: 1.5rem;
     letter-spacing: 1px;
-
+    transition: 1s color ease-in-out;
+    cursor: pointer;
     &:hover {
       color: white;
     }
