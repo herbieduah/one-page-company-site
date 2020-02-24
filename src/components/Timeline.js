@@ -5,7 +5,9 @@ const Hero = () => {
 		<div className="history">
             <div className="history__employees-blurb">
                 <h2 className="history__employees">12,000</h2>
-                <p className="history__blurb">Our people rock. They make up who we are and drive where we're going. That's why we are proud to support the 12,000 incredible team members that choose to work under one of Outlier's companies every day.
+                <p className="history__blurb history__blurb--desktop">Our people rock. They make up who we are and drive where we're going. That's why we are proud to support the 12,000 incredible team members that choose to work under one of Outlier's companies every day.
+                </p>
+                <p className="history__blurb history__blurb--mobile">team members strong
                 </p>
             </div>
             <div className="timeline">
@@ -13,7 +15,7 @@ const Hero = () => {
                     <div className="timeline__info timeline__info--finish">
                         <div className="timeline__content">
                             <h3>Some text that say stuff</h3>
-                            <p> Our people rock. They make up who we are and drive where we're going. </p>
+                            <p>Our people rock. They make up who we are and drive where we're going. </p>
                         </div>
                     </div>
                 </div>

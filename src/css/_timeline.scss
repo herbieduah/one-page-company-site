@@ -17,17 +17,27 @@
   }
 
   &__employees {
-    font-size: 18vmin;
+    font-size: 25vmin;
     letter-spacing: 5px;
     font-weight: bold;
-    margin-bottom: 5vmin;
+    line-height: 1;
+    margin-bottom: 0;
     margin: 0;
     display: block;
   }
 
   &__blurb {
     max-width: 900px;
-    display: block;
+    padding: 1rem;
+    &--desktop {
+      display: block;
+    }
+    &--mobile {
+      display: none;
+      font-weight: bold;
+      text-transform: uppercase;
+      padding: 0 1rem;
+    }
   }
 
 }
@@ -50,6 +60,7 @@
 
     &--bottom {
       top: 0;
+
       .timeline__content {
         &::before {
           top: -8px;
@@ -59,19 +70,23 @@
 
     &--top {
       bottom: 0;
+
       .timeline__content {
         &::before {
           bottom: -8px;
         }
       }
     }
+
     &--start {
       top: 0;
+
       .timeline__content {
         &::before {
           display: none;
         }
-        &::after{
+
+        &::after {
           content: "";
           display: block;
           border-right: solid 15px white;
@@ -84,14 +99,17 @@
 
     &--finish {
       top: 0;
+
       .timeline__content {
         &::before {
           display: none;
         }
-        &::after{
+
+        &::after {
           content: "";
           display: block;
-          border-left: solid 15px white;;
+          border-left: solid 15px white;
+          ;
           border-bottom: solid 15px transparent;
           border-top: solid 15px transparent;
           left: -1px;
@@ -116,7 +134,7 @@
       left: -8px;
     }
 
-    &::after{
+    &::after {
       content: "";
       display: none;
       position: absolute;
@@ -125,4 +143,73 @@
       top: -15px;
     }
   }
+}
+
+@include breakpoint(phone) {
+
+  .history {
+    background: none;
+    &__employees {
+      padding: 0;
+    }
+
+    &__employees-blurb {
+      padding: 2rem 0 1.5rem;
+      background-attachment: fixed;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url(../images/outlier-office.png);
+    }
+    &__blurb {
+      &--desktop {
+        display: none;
+      }
+      &--mobile {
+        display: block;
+      }
+    }
+  }
+
+  .timeline {
+    background-color: darkslateblue;
+    height: 100vmax;
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+
+    &__line {
+      border-left: 1px solid white;
+      display: block;
+      position: relative;
+    }
+
+    &__info {
+      position: absolute;
+      width: 150px;
+      left: 10%;
+      display: flex;
+      border: none;
+
+      &--finish {
+        top: 0;
+  
+        .timeline__content {
+          &::before {
+            display: none;
+          }
+  
+          &::after {
+            content: "";
+            display: block;
+            transform: rotate(90deg);
+            border-left: solid 15px white;
+            border-bottom: solid 15px transparent;
+            border-top: solid 15px transparent;
+            left: -8px;
+          }
+        }
+      }
+    }
+  }
+
 }

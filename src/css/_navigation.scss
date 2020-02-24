@@ -22,9 +22,7 @@
     margin: 0;
     width: 100%;
     padding: 0;
-    @include breakpoint(phone) {
-      display: none;
-    }
+    
   }
 
   &__link {
@@ -56,9 +54,9 @@
       }
     }
 
-    // &__links {
-    //   display: none;
-    // }
+    &__links {
+      display: none;
+    }
   }
 }
 
@@ -68,6 +66,7 @@
 
     &__logo {
       width: 100px;
+      display: block;
 
       &--mobile {
         display: block;

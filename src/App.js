@@ -4,6 +4,8 @@ import 'normalize.css';
 import Navigation from "./components/Navigation";
 import Hero from "./components/Hero";
 import Timeline from "./components/Timeline";
+import Numbers from "./components/Numbers";
+import MeetTheTeam from "./components/MeetTheTeam";
 
 function App() {
   return (
@@ -11,6 +13,8 @@ function App() {
       <Navigation/>
       <Hero/>
       <Timeline/>
+      <Numbers/>
+      <MeetTheTeam/>
     </div>
   );
 }
