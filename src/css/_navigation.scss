@@ -2,6 +2,13 @@
   width: 100%;
   background: black;
   padding: 20px 100px;
+  opacity: 1;
+  transition: 1s all;
+  position: fixed;
+  z-index: 100;
+  &--hidden {
+    opacity: 0;
+  }
 
   &__logo {
     width: 150px;
@@ -22,7 +29,6 @@
     margin: 0;
     width: 100%;
     padding: 0;
-    
   }
 
   &__link {
@@ -36,18 +42,23 @@
       color: white;
     }
   }
-
 }
 
 @include breakpoint(phone) {
   .nav {
-    padding: 20px;
-
+    padding: 0  1rem;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    &--hidden {
+      opacity: 1;
+    }
     &__logo {
       width: 100px;
 
       &--mobile {
-        display: block; 
+        display: block;
       }
 
       &--desktop {

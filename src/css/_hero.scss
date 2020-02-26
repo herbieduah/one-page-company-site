@@ -5,6 +5,11 @@
   &__slider-content {
     position: relative;
   }
+
+  strong {
+    font-weight: bold;
+  }
+  
   &__content {
     position: absolute;
     background-color: rgba(255, 166, 0, 0.719);
@@ -31,6 +36,7 @@
     img {
       display: none;
     }
+    margin-top: 4rem;
     &__slider-content {
       width: 100%;
       min-height: 40vh;

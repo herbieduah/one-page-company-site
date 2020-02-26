@@ -40,6 +40,7 @@
     &__search {
         border: none;
         border-bottom: 3px solid $gray-400;
+        border-radius: 0;
         width: 100%;
         background: transparent;
         transition: .5s all;
@@ -54,6 +55,7 @@
 
     &__search-container {
         padding: 1rem;
+        display: flex;
     }
 }
 
