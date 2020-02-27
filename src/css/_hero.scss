@@ -1,6 +1,5 @@
 .hero {
-
-  width:  100%;
+  width: 100%;
 
   &__slider-content {
     position: relative;
@@ -9,10 +8,10 @@
   strong {
     font-weight: bold;
   }
-  
+
   &__content {
     position: absolute;
-    background-color: rgba(255, 166, 0, 0.719);
+    background-color: $main-color-opaque;
     bottom: 1%;
     right: 0;
     width: 40%;
@@ -29,7 +28,6 @@
     padding-bottom: 1rem;
   }
 }
-
 
 @include breakpoint(phone) {
   .hero {
@@ -53,12 +51,12 @@
       top: 0;
       width: 100%;
       height: 100%;
-      padding: .85rem;
+      padding: 0.85rem;
       background-color: $main-color-opaque;
-      font-size: .85rem;
+      font-size: 0.85rem;
       box-sizing: border-box;
     }
-}
+  }
 }
 
 @include breakpoint(tablet-portrait) {
@@ -73,5 +71,5 @@
       height: 100%;
       padding: 1rem;
     }
-}
+  }
 }

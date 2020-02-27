@@ -1,115 +1,110 @@
 .numbers {
-    .standout {
-        color: $main-color;
-    }
+  .standout {
+    color: $main-color;
+  }
 
-    .all-caps {
-        text-transform: uppercase;
-    }
+  .all-caps {
+    text-transform: uppercase;
+  }
 
+  .col-33,
+  .col-66 {
+    display: flex;
+    height: 35vmin;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -1px;
+  }
+
+  &__by-the-numbers,
+  &__meet-team {
+    font-size: 9vmin;
+    display: block;
+    display: flex;
+    text-align: center;
+    letter-spacing: 7px;
+
+    span {
+      display: inline-block;
+    }
+  }
+
+  &__text-gray-bg,
+  &__text-main-bg {
+    background-color: $gray-200;
+    color: white;
+    p {
+      padding: 1rem;
+    }
+  }
+
+  &__text-gray-bg {
+    background-color: $gray-200;
+  }
+  &__text-main-bg {
+    background-color: $main-color;
+  }
+
+  &__callout {
+    color: white;
+    font-size: 7.5vmin;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 7px;
+  }
+
+  &__callout-text {
+    font-size: 2.6vmin;
+    padding: 1rem;
+    color: $gray-500;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 4px;
+    &--yoy {
+      color: $gray-200;
+    }
+  }
+
+  &__worldwide {
+    background-color: $gray-300;
+  }
+
+  &__gross-rev {
+    background-color: $gray-400;
+  }
+
+  &__yoy {
+    background-color: $gray-500;
+  }
+}
+
+@include breakpoint(phone) {
+  .numbers {
     .col-33,
     .col-66 {
-        display: flex;
-        height: 35vmin;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-top: -1px;
+      display: flex;
+      height: 55vmin;
+      margin-top: -1px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__callout {
+      font-size: 2.7rem;
+      padding: 1rem;
+    }
+
+    &__callout-text {
+      font-size: 1.2rem;
+      padding: 1rem;
     }
 
     &__by-the-numbers,
     &__meet-team {
-        font-size: 9vmin;
-        display: block;
-        display: flex;
-        text-align: center;
-        letter-spacing: 7px;
-
-        span {
-            display: inline-block;
-        }
+      padding: 0;
+      font-size: 3rem;
     }
-
-    
-   
-
-    &__text-gray-bg, &__text-main-bg {
-        background-color: $gray-200;
-        color: white;
-        p {
-            padding: 1rem;
-        }
-    }
-
-    &__text-gray-bg{
-        background-color: $gray-200;
-    }
-    &__text-main-bg {
-        background-color: $main-color;
-    }
-
-    &__callout {
-        color: white;
-        font-size: 7.5vmin;
-        text-align: center;
-        font-weight: bold;
-        letter-spacing: 7px;
-    }
-
-    &__callout-text {
-        font-size: 2.6vmin;
-        padding: 1rem;
-        color: $gray-500;
-        text-align: center;
-        font-weight: bold;
-        letter-spacing: 4px;
-        &--yoy{
-            color: $gray-200;
-        }
-    }
-
-    &__worldwide {
-        background-color: $gray-300;
-    }
-
-    &__gross-rev {
-        background-color: $gray-400;
-    }
-
-    &__yoy {
-        background-color: $gray-500;
-    }
-}
-
-
-@include breakpoint(phone) {
-    .numbers {
-
-        .col-33,
-        .col-66 {
-            display: flex;
-            height: 55vmin;
-            margin-top: -1px;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        &__callout {
-            font-size: 2.7rem;
-            padding: 1rem;
-        }
-
-        &__callout-text {
-            font-size: 1.2rem;
-            padding: 1rem;
-        }
-
-        &__by-the-numbers,
-        &__meet-team {
-            padding: 0;
-            font-size: 3rem;
-        }
-    }
-
+  }
 }

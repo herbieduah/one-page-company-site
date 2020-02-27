@@ -1,72 +1,52 @@
-const DaveTedesco = "https://cdn-a.outlier.com/wp-content/uploads/2019/06/Dave-Tedesco.jpg";
-const JeffWalters = "https://cdn-a.outlier.com/wp-content/uploads/2019/06/Jeff-Walters.jpg";
-const AndrewChristensen = "https://cdn-a.outlier.com/wp-content/uploads/2019/06/Andrew-Christensen.jpg";
-const JamesColyer = "https://cdn-a.outlier.com/wp-content/uploads/2019/06/James-Colyer-.jpg";
-const JasonSpear = "https://cdn-a.outlier.com/wp-content/uploads/2019/06/Jason-Spear.jpg";
-const MelissaMarchwick = "https://cdn-a.outlier.com/wp-content/uploads/2019/06/Melissa-Marchwick-1.jpg";
-const PaulFishburn = "https://cdn-a.outlier.com/wp-content/uploads/2019/06/Paul-Fishburn-New.jpg";
-const ZacBern = "https://cdn-a.outlier.com/wp-content/uploads/2019/06/Zac-Bern.jpg";
-const ChrisReap = "https://cdn-a.outlier.com/wp-content/uploads/2019/06/Chris-Reap.jpg";
-const PatrickVanDenBossche = "https://cdn-a.outlier.com/wp-content/uploads/2019/06/Patrick-Van-Den-Bossche.jpg";
-
-// import somename from "./images/team-08.png";
-// import somename from "./images/team-09.png";
-// import somename from "./images/team-10.png";
-// import somename from "./images/team-11.png";
-// import somename from "./images/team-12.png";
-// import somename from "./images/team-13.png";
-// import somename from "./images/team-14.png";
-// import somename from "./images/team-15.png";
-
 const Information = [
   {
     name: "Dave Tedesco",
-    image: DaveTedesco,
+    image: "https://cdn-a.outlier.com/wp-content/uploads/2019/06/Dave-Tedesco.jpg",
     position: "Founder and CEO"
   },
   {
     name: "Jeff Walters",
-    image: JeffWalters,
+    image: "https://cdn-a.outlier.com/wp-content/uploads/2019/06/Jeff-Walters.jpg",
     position: "COO"
   },
   {
     name: "Andrew Christensen",
-    image: AndrewChristensen,
+    image: "https://cdn-a.outlier.com/wp-content/uploads/2019/06/Andrew-Christensen.jpg",
     position: "General Counsel"
   },
   {
     name: "James Colyer",
-    image: JamesColyer,
+    image: "https://cdn-a.outlier.com/wp-content/uploads/2019/06/James-Colyer-.jpg",
     position: "Managing Partner"
   },
   {
     name: "Jason Spear",
-    image: JasonSpear,
+    image: "https://cdn-a.outlier.com/wp-content/uploads/2019/06/Jason-Spear.jpg",
     position: "President Entertainment Decision"
   },
   {
     name: "Melissa Marchwick",
-    image: MelissaMarchwick,
+    image: "https://cdn-a.outlier.com/wp-content/uploads/2019/06/Melissa-Marchwick-1.jpg",
     position: "CMO"
   },
   {
     name: "Paul Fishburn",
-    image: PaulFishburn,
+    image: "https://cdn-a.outlier.com/wp-content/uploads/2019/06/Paul-Fishburn-New.jpg",
     position: "President - Healthcare Group"
   },
   {
     name: "Zac Bern",
-    image: ZacBern,
+    image: "https://cdn-a.outlier.com/wp-content/uploads/2019/06/Zac-Bern.jpg",
     position: "CTO"
   },
   {
     name: "Chris Reap",
-    image: ChrisReap,
+    image: "https://cdn-a.outlier.com/wp-content/uploads/2019/06/Chris-Reap.jpg",
     position: "VP - Business Development"
   },
   {
     name: "Patrick van den Bossche",
-    image: PatrickVanDenBossche,
+    image: "https://cdn-a.outlier.com/wp-content/uploads/2019/06/Patrick-Van-Den-Bossche.jpg",
     position: "Realty Executives International"
   }
 ];

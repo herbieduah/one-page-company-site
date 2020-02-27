@@ -39,11 +39,15 @@
       padding: 0 1rem;
     }
   }
+}
 
+.timeline-mobile {
+  display: none;
 }
 
 .timeline {
   padding: 250px 0 250px;
+  display: block;
 
   &__line {
     border-top: 1px solid white;
@@ -51,7 +55,10 @@
     position: relative;
   }
 
-  &__year,&__title, &__location,&__team {
+  &__year,
+  &__title,
+  &__location,
+  &__team {
     display: block;
   }
   &__year {
@@ -62,14 +69,15 @@
   &__title {
     font-weight: bold;
     text-transform: uppercase;
-    padding: .4rem 0;
+    padding: 0.4rem 0;
   }
-  &__location,&__team {
-    font-size: .85rem;
+  &__location,
+  &__team {
+    font-size: 0.85rem;
   }
 
   &__team {
-    padding-bottom: .85rem;
+    padding-bottom: 0.85rem;
   }
 
   &__info {
@@ -77,7 +85,6 @@
     width: 190px;
     left: 10%;
     border-left: 1px solid white;
-    
 
     &--bottom {
       top: 0;
@@ -130,7 +137,6 @@
           content: "";
           display: block;
           border-left: solid 15px white;
-          ;
           border-bottom: solid 15px transparent;
           border-top: solid 15px transparent;
           left: -1px;
@@ -165,7 +171,6 @@
 }
 
 @include breakpoint(phone) {
-
   .history {
     background: none;
     &__employees {
@@ -189,10 +194,13 @@
       }
     }
   }
-
   .timeline {
+    display: none;
+  }
+  .timeline-mobile {
     background-color: $gray-500;
-    height: 60vmax;
+    height: 1400px;
+    padding: 1rem 0;
     display: flex;
     justify-content: center;
     // align-items: center;
@@ -203,46 +211,124 @@
       position: relative;
     }
 
+    &__year,
+    &__title,
+    &__location,
+    &__team {
+      display: block;
+    }
+    &__year {
+      font-weight: bold;
+      font-size: 1.7rem;
+      text-transform: uppercase;
+    }
+    &__title {
+      font-weight: bold;
+      text-transform: uppercase;
+      padding: 0.4rem 0;
+    }
+    &__location,
+    &__team {
+      font-size: 0.75rem;
+    }
+
+    &__team {
+      padding-bottom: 0.85rem;
+    }
+
+    &__content {
+      position: relative;
+      color: white;
+      padding: 0 15px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: $main-color;
+        left: -8px;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        top: -15px;
+      }
+    }
+
     &__info {
       position: absolute;
       width: 150px;
       left: 10%;
       display: flex;
       border: none;
-     
+
       &--finish {
         top: 0;
-  
-        .timeline__content {
+        background-color: $main-color-opaque;
+        .timeline-mobile__content {
           &::before {
             display: none;
           }
-  
+
           &::after {
             content: "";
             display: block;
             transform: rotate(90deg);
             left: -8px;
+            border-left: solid 15px white;
+            border-bottom: solid 15px transparent;
+            border-top: solid 15px transparent;
           }
         }
       }
       &--start {
         top: 0;
-  
-        .timeline__content {
+
+        .timeline-mobile__content {
           &::before {
             display: none;
           }
-  
+
           &::after {
             content: "";
             display: block;
             transform: rotate(90deg);
             left: -8px;
+            border-right: solid 15px white;
+            border-bottom: solid 15px transparent;
+            border-top: solid 15px transparent;
+          }
+        }
+      }
+
+      &--bottom {
+        top: 0;
+
+        .timeline-mobile__content {
+          &::before {
+            top: -10px;
+          }
+        }
+      }
+
+      &--top {
+        bottom: 82%;
+        left: -151px !important ;
+        .timeline-mobile__content {
+          text-align: right;
+          &::before {
+            bottom: auto;
+            left: auto;
+            right: -8px;
+            top: 11px;
           }
         }
       }
     }
   }
-
 }

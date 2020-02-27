@@ -24,7 +24,6 @@ function MeetTheTeam() {
       <Fragment key={data.name}>
         <li className="meettheteam__item">
           <div className="meettheteam__item-container">
-            {/* <img src={data.image} alt={data.name} className="meettheteam__image"/> */}
             <div
               className="meettheteam__image"
               style={{
