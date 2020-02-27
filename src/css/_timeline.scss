@@ -43,7 +43,7 @@
 }
 
 .timeline {
-  padding: 15vmin 0 20vmin;
+  padding: 250px 0 250px;
 
   &__line {
     border-top: 1px solid white;
@@ -51,12 +51,33 @@
     position: relative;
   }
 
+  &__year,&__title, &__location,&__team {
+    display: block;
+  }
+  &__year {
+    font-weight: bold;
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+  &__title {
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: .4rem 0;
+  }
+  &__location,&__team {
+    font-size: .85rem;
+  }
+
+  &__team {
+    padding-bottom: .85rem;
+  }
+
   &__info {
     position: absolute;
-    width: 230px;
+    width: 190px;
     left: 10%;
     border-left: 1px solid white;
-    display: flex;
+    
 
     &--bottom {
       top: 0;
@@ -82,14 +103,6 @@
       top: 0;
 
       .timeline__content {
-        h3,p,span {
-          font-size: .9rem;
-          display: block;
-        }
-        p{
-          font-weight: bold;
-          text-transform: uppercase;
-        }
         &::before {
           display: none;
         }
@@ -107,7 +120,7 @@
 
     &--finish {
       top: 0;
-
+      background-color: $main-color-opaque;
       .timeline__content {
         &::before {
           display: none;
@@ -133,7 +146,6 @@
 
     &::before {
       content: "";
-      display: none;
       position: absolute;
       width: 15px;
       height: 15px;
@@ -144,7 +156,6 @@
 
     &::after {
       content: "";
-      display: none;
       position: absolute;
       width: 0;
       height: 0;
