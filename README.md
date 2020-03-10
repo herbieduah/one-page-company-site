@@ -1,3 +1,6 @@
+## This Project is hosted on netlify
+[Check it out here](https://pedantic-mcclintock-0342ee.netlify.com).
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
